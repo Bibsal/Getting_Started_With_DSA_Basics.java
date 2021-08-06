@@ -4,16 +4,16 @@ public class My_reverse_of_an_Array {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
 		int[] arr = new int[n];
-		takinginput(n , arr);
+		takinginput(arr);        // we have not passed 'n'(size) while calling / defining any of our functions because int the above line we've already set our array's size to n , so its already of size n so no need to pass it again and again as it's of no use
 		System.out.print("The array before reversing was :- ");
-		printingfn(n , arr);
-		reverse(n , arr);
+		printingfn(arr);
+		reverse(arr);
 		System.out.print("\nThe array after reversing is :- ");
-		printingfn(n , arr);
+		printingfn(arr);
 		scn.close();
 	}
 	
-	public static void takinginput(int n , int[] arr) {
+	public static void takinginput(int[] arr) {
 		Scanner scn = new Scanner(System.in);
 		for(int i = 0; i < arr.length; i++) {
 			arr[i] = scn.nextInt();
@@ -21,7 +21,7 @@ public class My_reverse_of_an_Array {
 		scn.close();
 	}
 	
-	public static void reverse(int n , int[] arr) {
+	public static void reverse(int[] arr) {
 		int i = 0;                   // i = 0 will set a pointer to the first element of the array
 		int j = arr.length - 1;      // j = arr.length - 1 will set a pointer to the last element of the array
 		
@@ -35,7 +35,7 @@ public class My_reverse_of_an_Array {
 		}
 	}
 	
-	public static void printingfn(int n , int[] arr) {
+	public static void printingfn(int[] arr) {
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]+" ");
 		}

@@ -9,6 +9,7 @@ public class BasicPrinting {
 		//  a full line , whatever string is present in a single line
 		
 //		@SuppressWarnings("resource")
+/*The @SuppressWarnings annotation type allows Java programmers to disable compilation warnings for a certain part of a program (type, field, method, parameter, constructor, and local variable). Normally warnings are good. However in some cases they would be inappropriate and annoying. */
 //		Scanner scn = new Scanner(System.in);
 //		String s = scn.nextLine();
 //		String s1 = scn.next();

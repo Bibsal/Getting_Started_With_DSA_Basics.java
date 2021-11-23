@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*; 
 public class sort012viaSelectionSort {
 	public static void main(String diksha[]) {
 		Scanner scn = new Scanner(System.in);

@@ -1,3 +1,6 @@
+//Output format :- 3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3
+//Phle n print kro then call n - 1 then phir n print kro then again call n - 1 then again print kro n, and base case n equal to 0 hua tho return kr do, then it'll print according to our expected output !!
+//CODE :-
 import java.io.*;
 import java.util.*;
 

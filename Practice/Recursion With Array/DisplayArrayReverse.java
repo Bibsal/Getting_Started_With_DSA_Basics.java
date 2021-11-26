@@ -9,7 +9,8 @@ public class DisplayArrayReverse {
 		}
 		printElementsOfArrayInReverse(arr, 0);
 		//// As we have to print from last to the 0th element of array so we've passed the 0 as index 0 and in the displayArr function first we called the function and then printed arr of idx 
-	//// and 
+	//// and then again called the recursive function by passing the array and index + 1 so that another index is called and is printed..
+    }
 	
 	}
 	

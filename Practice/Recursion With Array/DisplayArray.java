@@ -11,7 +11,7 @@ public class Main {
         for(int i = 0; i < arr.length; i++) {
             arr[i] = scn.nextInt();
         }
-        displayArr(arr, 0);     // As we have to print from 0 to the last element of array so we've passed the 0 as index 0 and in the displayArr function first we printed the arr of idx 
+        displayArr(arr, 0);     // As we have to print from 0 to the last element of array so we've passed the 0 as index 0 and in the displayArr function first we printed the arr of idx
                                 //and then called the recursive function by passing the array and index + 1 so that another index is called and is printed..
     }
 

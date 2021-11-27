@@ -9,10 +9,10 @@ public class PrintIncreasing {
 		printIncreasing(n);
 	}
 	public static void printIncreasing(int n) {
-		if(n ==0) {                         //BASE CASE
+		if(n ==0) {                          //BASE CASE
 			return;
 		}
-		printIncreasing(n - 1);             //Recursive Function
+		printIncreasing(n - 1);              //Recursive Function
 		System.out.println(n);              //Self-work
 	}
 

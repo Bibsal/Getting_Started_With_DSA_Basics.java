@@ -13,7 +13,7 @@ public class PrintIncreasing {
 			return;
 		}
 		printIncreasing(n - 1);              //Recursive Function
-		System.out.println(n);              //Self-work
+		System.out.println(n);               //Self-work
 	}
 
 }

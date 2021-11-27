@@ -2,7 +2,7 @@ import java.util.*;
 public class BinarySearch {
 	
 	
-	//ALWAYS REMENBER THAT BINARY SEARCH WORKS ON SORTED ARRAYS
+	//ALWAYS REMEMBER THAT BINARY SEARCH WORKS ON SORTED ARRAYS
 	public static void main(String args[]) {
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();

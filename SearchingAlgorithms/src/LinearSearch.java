@@ -1,4 +1,4 @@
-// Basically Linear Search is normal traversing 
+// Basically Linear Search is normal traversing of the array and searching the element
 import java.util.*;
 public class LinearSearch {
 	public static void main(String args[]) {

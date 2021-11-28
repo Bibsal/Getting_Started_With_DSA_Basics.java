@@ -21,7 +21,7 @@ public class FindFirstIndexOfElement {
 		if(arr[idx] == data) {
 			return idx;
 		} else {
-			int fiisa = firstIndexElement(arr, idx + 1, data);
+			int fiisa = firstIndexElement(arr, idx + 1, data);     // fiisa --> first index in smaller array.
 			return fiisa;
 		}
 	}

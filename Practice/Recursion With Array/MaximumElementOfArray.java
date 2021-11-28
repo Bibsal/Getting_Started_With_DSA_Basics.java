@@ -16,7 +16,7 @@ public class MinimumElementOfArray {
 			return arr[idx];
 		}
 		
-		int misa = MinimumElement(arr, idx + 1);    // misa -->> maximum in smaller array i.e element from index 1 till last element  
+		int misa = MinimumElement(arr, idx + 1);    // misa -->> maximum in smaller array i.e maximum element from index 1 till last element, and lastly it'll be compared to the 0th index and out final output is found
 		if(arr[idx] > misa) {
 			return arr[idx];
 		} else {

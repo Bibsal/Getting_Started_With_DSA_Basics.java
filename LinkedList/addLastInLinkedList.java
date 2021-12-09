@@ -12,6 +12,9 @@ public class addLastInLinkedList {
 		int size;
 		
 		void display() {
+			if(size == 0) {
+				return;
+			}
 			for(Node temp = this.head; temp != null; temp = temp.next) {
 				System.out.print(temp.data + " ");
 			}

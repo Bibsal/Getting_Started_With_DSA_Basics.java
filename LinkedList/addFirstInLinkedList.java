@@ -10,6 +10,7 @@ public class addFirstInLinkedList {
         Node tail;
         int size;
 
+        /*
         void addLastNode(int val) {
             Node nayaNode = new Node();
             nayaNode.data = val;
@@ -23,7 +24,7 @@ public class addFirstInLinkedList {
             }
             size++;
         }
-
+        */
         void addFirstNode(int val) {
             Node nayaNode = new Node();
             nayaNode.data = val;

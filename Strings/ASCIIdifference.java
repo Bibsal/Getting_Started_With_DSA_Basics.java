@@ -21,7 +21,7 @@ public class ASCIIdifference {
 			sb.append(curr);
 		}
 		
-		return sb.toString();
+		 return sb.toString();
 	}
 	
 }

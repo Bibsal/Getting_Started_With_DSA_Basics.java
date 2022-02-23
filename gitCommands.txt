@@ -8,3 +8,4 @@
 8. Now if you have mistakenly deleted your important file and you want to get back that file anyhow so you have a timeMachine in github by which you can get back the old things which you didn't wanted to delete, so for that you do git log by which you get to see all your commits, then (see below line)
    after doing git log you get all the previous commits now you can see that your deleted file k phle kon sa commit that so ab delete wale commit sae thik phle wale commit ya whichever commit you want to come back to -> so us commit ka hash set likha rhta hai commit k side me so just copy the hash set and,
    after copying the hash set just do git reset andPasteTheHashSetHere and hit enter and you will directly jump to this commit and iske bad jo v commit hua tha wo sab unlinked ho jiage and you get all the things and file jo is commit tak present tha tumhare pas. and you can again stage them back by doing git add . !!
+ 

@@ -35,6 +35,22 @@ public class Print2DArrayWithDifferentMethods {
             }
             System.out.println();
         }
+
+        // Printing using enhanced for loop or for each loop
+        for(int[] element : arr) {
+            for(int val : element) {
+                System.out.print(val+" ");
+            }
+            System.out.println();
+        }
         
+        // Printing using collections (i.e Arrays.toString(arrayPass))
+        for(int[] elemArr : arr) {
+            System.out.println(Arrays.toString(elemArr));
+        }
+
+        // Printing using collections (i.e Arrays.deepToString(arr))
+        System.out.println(Arrays.deepToString(arr));
+
     }
 }

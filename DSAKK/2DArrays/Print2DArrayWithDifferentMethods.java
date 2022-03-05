@@ -50,7 +50,7 @@ public class Print2DArrayWithDifferentMethods {
         }
 
         // Printing using collections (i.e Arrays.deepToString(arr))
-        System.out.println(Arrays.deepToString(arr));
+        System.out.println(Arrays.deepToString(arr));        // if you directly want to print a 2D array in one line then you use deepToString(passArr) method and your work will be done.
 
     }
 }

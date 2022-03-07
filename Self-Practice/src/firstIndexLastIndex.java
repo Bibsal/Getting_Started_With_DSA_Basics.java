@@ -24,6 +24,6 @@ public class firstIndexLastIndex {
             }
         }
 
-        System.out.println(fi + " , " + li);
+        System.out.println(fi + " , " + li); 
     }
 }

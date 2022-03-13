@@ -16,7 +16,7 @@ public class Main {
 
         // Now we will work with the gaps of the matrix
         for(int gap = 0; gap < arr.length; gap++) {
-            for(int i = 0, j = gap; j < arr.length; i++, j++) {        // since every diagonal starts with 0 for i and with gap value for j so we have initialised the value of loop here like that only, and as it travels both i and j increases by 1 so we've incremented both by 1
+            for(int i = 0, j = gap; j < arr.length; i++, j++) {        // since every diagonal starts with 0 for i and with gap value for j so we have initialised the value of loop here like that only, and as it travels, both i and j increases by 1 so we've incremented both by 1
                 System.out.println(arr[i][j]);
             }
         }

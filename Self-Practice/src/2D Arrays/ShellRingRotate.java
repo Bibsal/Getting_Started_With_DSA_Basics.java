@@ -22,10 +22,10 @@ public class ShellRingRotate {
 
     public static void ringRotate(int[][] arr, int s, int r) {
         // We solve this problem using three methods.
-        // 1. fill the shell to be rotated in a single dimentional matrix from 2d matrix
-        // 2. rotate this single dimention matrix with the value of r
-        // 3. refill it back to the same shell of the 2d matrix
-        int[] oned = fillOnedFromShell(arr, s);        // step 1
+        // Step 1. fill the shell to be rotated in a single dimentional matrix from 2d matrix
+        // Step 2. rotate this single dimention matrix with the value of r
+        // Step 3. refill it back to the same shell of the 2d matrix
+        int[] oned = fillOnedFromShell(arr, s);      // step 1
         rotateOned(oned, r);                         // step 2
         fillShellFromOned(arr, s, oned);             // step 3
     }

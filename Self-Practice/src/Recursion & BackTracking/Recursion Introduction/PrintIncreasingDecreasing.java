@@ -12,7 +12,7 @@ public class PrintIncreasingDecreasing {
         }
 
         System.out.print(idx+" ");
-        printIncreasingDecreasing(n - 1, idx + 1);
+        printIncreasingDecreasing(n, idx + 1);
         System.out.print(idx+" ");
     }
 }

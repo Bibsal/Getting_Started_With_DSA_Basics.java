@@ -19,10 +19,10 @@ public class GetSubsequence {
         ArrayList<String> faithROS = getSubSequence(subString);        // faith for rest of the substring
         ArrayList<String> myansArLst = new ArrayList<>();              // my answer array list to store our answer
         for(String ans : faithROS) {
-            myansArLst.add(ans);
+            myansArLst.add(ans);            // this line means str.charAt(0) denies to be the part of myansArLst
         }
         for(String ans : faithROS) {
-            myansArLst.add(ch + ans);
+            myansArLst.add(ch + ans);       // this line means str.charAt(0) agrees to be the part of myansArLst
         }
 
         return myansArLst;

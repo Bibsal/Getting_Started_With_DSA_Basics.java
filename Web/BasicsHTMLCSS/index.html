@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands on HTML and CSS||Mission Self-Developer</title>
+    <style>
+        *{  /* this is Universal selector, which selects/puts effect on whole webpage(denoted by * )*/
+            background-color: black;
+            color: #fff;
+        }
+        h1,h2,p{      /* Grouping selector:- mentioned below in simple selector */
+            color: red;
+        }
+        /* Descendent selector */
+        div p span {
+            color: salmon;
+        }
+        /* Child selector */
+        div > p > span {
+            color: springgreen;
+        }
+        /* div ol li{
+            color: rgb(94, 57, 3);
+        } */
+
+        /* Attribute Selector */
+        p[class = "abc"] {
+            color:cadetblue
+        }
+        a[href = "#"] {
+            color:chartreuse
+        }
+        a[href = "https://google.com"] {
+            background-color: rgb(56, 15, 15);
+        }
+        /* ------------------------Selectors Done----------------------- */
+        .firstTable{
+            border-collapse: collapse;
+        }
+        td,th {
+            /* border : 1px dotted yellowgreen; */
+            border : 2px solid yellowgreen;
+        }
+        </style>
+</head>
+<body>
+    <h1> <a href="cssInfo.html" style="color: rgb(42, 218, 159);">What is CSS ?</a> </h1>
+    <h1>What is HTML ?</h1>
+    <p>HTML is abbreviated from <em>Hyper Text Markup Language</em>, and is defined as <strong>HTML is a series of elements.</strong></p>
+    <p>Elements means combination of opening tag + content + closing tag, <br> p tag hai tho wo ak tag hai but jab hum is p tag kae opening and closing kae bich me kuch content likhte hai tho ye purae ko hum element bolte hai, and HTML is a series or combination of all these elements.</p>
+    <h2>Bishal</h2>
+    <h3>Prasad</h3>
+    <h4>Keshri</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Mollitia nulla id corrupti minus eaque impedit, et deserunt nesciunt nobis deleniti,
+    laboriosam earum voluptate alias consectetur vero sit! Sint, amet rerum?
+</p>
+<h1>Things learnt in HTML</h1>
+<ol>
+    <li>h1-h6 for heading</li>
+    <li>p for paragraph</li>
+    <li>img for images, where we can pass the source in two ways:-
+        <ul>
+            <li>Full Path (Eg. /users/bishal/desktop/html/bird.jpg)</li>
+            <li>Relative Path (Eg. /html/bird.jpg)</li>
+        </ul>
+    </li>
+    <li>div tags -> for aligning many items in one container.</li>
+    <li>strong or bold (strong was in old HTML, now it's bold)</li>
+    <li>em or i -> for italics(em was in old, i is in new)</li>
+    <li>a href -> as anchor tag(target equalsto underscore blank)</li>
+    <li>table tag for creating table, you can also use border attribute in table for the bordering/outlining table</li>
+    <li>thead and tbody of table ->(tr and th in thead , tr and td in tbody) tr as table row and th as table head and td as table data</li>
+    <li><span style="background-color: rgb(18, 65, 49); color: red;">Shortcut :-</span> if you want 4 td tags or any tags in multiple form than you can directly multiply that specific tag * no of times you want it(Eg:- td*4, this gives you 4td's at once)</li>
+    <li>colspan and rowspan are also attributes that can be used in th/td if we want two or more rows to combine under one subtopic. Eg: I've shown in the 2nd table below</li>
+    <li>caption tag is used to give caption/topic/heading on what is the table about.(It is recently introduced in HTML5).</li>
+    <li>Block elements are those which takes full block or those tags that execute in new line are said to be as block elements</li>
+    <li>Inline elements are those tags which execute side by side or those which does not cover the whole line and only covers till whatever content it has</li>
+    <li>(Eg tags of block element:- div, p, table, h1 ... h6 etc are some examples of the block element)</li>
+    <li>(Eg tags of inline element:- th, td, img, span etc are some examples of the inline element)</li>
+    <li>span tag is also an inline element</li>
+</ol>
+<table class="firstTable" >
+    <caption> BatchMates Table</caption>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Fav. Sub</th>
+            <th>Goal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bishal</td>
+            <td>22</td>
+            <td>DSADEV</td>
+            <td>20+</td>
+        </tr>
+        <tr>
+            <td>Another</td>
+            <td>30</td>
+            <td>DEV</td>
+            <td>10+</td>
+        </tr>
+        <tr>
+            <td>Someone</td>
+            <td>25</td>
+            <td>DSA</td>
+            <td>25+</td>
+        </tr>
+    </tbody>
+</table>
+
+<table style = "margin-top: 50px;" border="9px">
+    <caption>Table using rowspan and colspan</caption>
+    <thead>
+        <tr>
+            <th colspan="2">Name</th>
+            <!-- <th>Age</th> -->
+            <th>Fav. Sub</th>
+            <th>Goal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Bishal</td>
+            <td>22</td>
+            <td rowspan="2">DSADEV</td>
+            <td>20+</td>
+        </tr>
+        <tr>
+            
+            <td>30</td>
+            
+            <td>10+</td>
+        </tr>
+        <tr>
+            <td>Someone</td>
+            <td>25</td>
+            <td>DSA</td>
+            <td>25+</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Combinator Selectors ::: Descendent Selectors and Children Selectors
+<h2>Combinator Selector :-</h2>
+<div>
+    <p>
+        <span>I am direct child.</span>
+    </p>
+</div>
+
+<div>
+    <span>
+        <p>
+            <span>I am indirect child.</span>
+        </p>
+    </span>
+</div> -->
+<!-- <ol>
+    <li>I</li>
+    <li>Am</li>
+    <li>A</li>
+    <li>List</li>
+</ol>
+
+<div>
+    <ol>
+        <li>Select</li>
+        <li>Me</li>
+    </ol>
+</div>
+
+
+<div>
+     <li>Random</li>
+</div> -->
+<hr><hr><hr>
+
+
+</body>
+</html>

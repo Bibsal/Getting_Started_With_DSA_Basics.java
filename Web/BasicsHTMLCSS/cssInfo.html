@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands on CSS</title>
+    <style>
+        *{  /* this is Universal selector, which selects/puts effect on whole webpage(denoted by * )*/
+            background-color: rgb(0, 0, 0);
+            color: rgb(238, 235, 235);
+        }
+        h1,h2,p{      /* Grouping selector:- mentioned below in simple selector */
+            color: red;
+        }
+        /* Descendent selector */
+        div p span {
+            color: salmon;
+        }
+        /* Child selector */
+        div > p > span {
+            color: springgreen;
+        }
+        /* div ol li{
+            color: rgb(94, 57, 3);
+        } */
+
+        /* Attribute Selector */
+        p[class = "abc"] {
+            color:cadetblue
+        }
+        a[href = "#"] {
+            color:chartreuse
+        }
+        a[href = "https://google.com"] {
+            background-color: rgb(56, 15, 15);
+        }
+        /* ------------------------Selectors Done----------------------- */
+        .firstTable{
+            border-collapse: collapse;
+        }
+        td,th {
+            /* border : 1px dotted yellowgreen; */
+            border : 2px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1><a href="index.html" style="color: rgb(42, 218, 159);">What is HTML ?</a></h1>
+    <h1>What is CSS ?</h1>
+<p>CSS is abbreviated from <em style="color: yellowgreen;">Cascading Style Sheet</em>, and is used for <strong style="color: yellowgreen;">styling the webpage.</strong></p>
+<p>We have three types of CSS :- </p>
+<strong>Inline > Internal > External</strong>
+<ul>
+    <li>Inline CSS :- The styling that we do instantly inside the tag line of the HTML page by using the style attribute is called Inline CSS.</li>
+    <li>Internal CSS :- The styling that we do in the HTML page but by using the style tag in the head of HTML is called Internal CSS.</li>
+    <li>External CSS :- The styling that we do externally by creating a different file(like style.css) and link this page to the HTML page via the link attribute is called External CSS.</li>
+</ul>
+<p>Since HTML code is ran from top to bottom so as the link tag that links our external css is written first inside our head tag, then comes internal styling css and then inline css so internal overrides external CSS and inline overrides everyone. </p>
+<h3>Tags learnt in CSS so far:-</h3>
+<ol>
+    <li style="color: yellow;">color tag for text-coloring</li>
+    <li style="background-color: rgb(103, 221, 182); color: red;">background-color tag for Background coloring and rest used the color tag here too to make the color of the text red</li>
+    <li style="font-size: 30px;">font-size tag for changing the size of the font.</li>
+    <li style="font-family: cursive;">font-family tag for changing the family of the font(like by default it uses the sans serif font for our pages). Here we've changed our font to cursive.</li>
+</ol>
+<h3>Then we Studied about <strong>SELECTORS!!!</strong></h3>
+<p>Selectors are of 5 types but we'll only look into 3 types of them:-</p>
+<ol>
+    <!-- Simple Selectors ::: Element, Class, ID, Universal, Grouping Selectors -->
+    <li>Simple Selectors:- They are also of 5 types :-</li>
+    <ol type="a">
+         <li>Element Selector :- are those which are pointed/directly worked out by the tags (Eg:- p{ color : green} here all the text inside all the paragraph(p)tag will get colored green)</li>
+         <li>Class Selector :- are those which are user defined and the class name is written inside class attribute. It is used via period/./dot(Eg:- .heading{font-size:50px;}) (</li>
+         <li>ID Selector :- are those which are user defined and represents unique identity name & is written inside id attribute.It is used via hashtag#(Eg: #uniqueSelector{font-family:serif;})</li>
+         <li>Universal Selector :- star/asteric/* is used to represent universal selector, once we do any changing inside this star then it'll apply to whole html page(Eg: *{color:blue;}) -> (We can also combine the universal selector with any tag, and it'll select all the elements inside the tag jiske sath universal selector use kiye ho)(Eg:- p * ---will select/work on all the elements inside the p tag)</li>
+         <li>Grouping Selector :- are those which are used when we want same kind of styling for many tags, s we group them and then style them under the same group rather than doing it differently.It is done by separating it by using comma(,)(Eg: h1,p,span{color: red;}, so here the text color for all h1, p and span will be red)</li>
+    </ol>
+    
+    <li>Combinator Selector:- They are of 4 types :-</li>
+    <ol type="I">
+        <li>Descendent Selector (done using space)</li>
+        <li>Child Selector (done using angular bracket (>))</li>
+        <li>Adjacent-Sibling Selector (done using addition sign(+)) (Eg p + .intro selects every element with class="intro" that directly follows a "p tag<p>", div + a selects every 'a' element that directly follows a div)</li>
+        <li>General-Sibling Selector (done using ~ sign) (Eg :- A ~ B selects all(sara hi) B that follow a A (same level/sibling hona chiye))</li>
+    </ol>
+    
+    <!-- Combinator Selectors ::: Descendent Selectors and Children Selectors-->
+    <div style="line-height:0.2cm;">
+    <h2 style="margin-left: -1.1cm;">Combinator Selector :-</h2>
+        <div>
+            <p>
+                <span>I am direct child.(Child Selector)</span>
+            </p>
+        </div>
+
+        <div>
+            <span>
+                <p>
+                    <span>I am indirect child.(Descendent Selector)</span>
+                </p>
+            </span>
+        </div>
+    </div>
+
+    <!-- Attribute Selectors -->
+    <li>Attribute Selector</li>
+    <p class = "abc">Attribute selector are those in which we access the given attribute by the mentioned syntax -->> ( tag[attribute]), the key value pair inside an HTML tag is known as attribute.</p>
+    <h4>Types of Attribute Selector:-</h4>
+    <ol>
+        <li>Attribute Selector directly with tag (Eg:- apple[for]) selects all for attribute present in apple tag</li>
+        <li>Attribute value selector ([attribute="valueJoBhiIsAttributeMePassKiyaHo"). </li>
+        <li>Attribute Starts With Selector [attribute^="valueJoBhiIsAttributeMePassKiyaHo"]  (See there We've used ^ here in this type.) (Eg:- .toy[category^="Swim"] selects elements with class toy and either category="Swimwear or category="Swimming".)</li>
+        <li>Attribute Ends With Selector Select all elements with an attribute value that ends with specific characters Syntax:->[attribute$="value"]. <br>Eg:-img[src$=".jpg"] selects all images display a .jpg image.</li>
+        <li>Attribute Wildcard Selector -->> somehow same like using universal selector with attribute.Select all elements with an attribute value that contains specific characters anywhere. Syntax -->>[attribute*="value"].A useful selector if you can identify a common pattern in things like class, href or src attributes.<br>Eg:- (i) img[src*="/thumbnails/"] selects all image elements that show images from the "thumbnails" folder.<br>(ii) [class*="heading"] selects all elements with "heading" in their class, like class="main-heading" and class="sub-heading".</li>
+    </ol>
+    <a href="#">Top of the page</a>
+    <a href="https://google.com" target="_blank">Google</a>   <!--target = _blank is an attribute of the anchor tag that takes/redirects your link of the page/opens the linked page to a new tab-->
+    <p>target = _blank is an attribute of the anchor tag that takes/redirects your link of the page/opens the linked page to a new tab. Eg:- Above in google we've used this attribute which opens Google to a new tab</p>
+
+
+    <h3>Some other CSS properties :-</h3>
+    <li>Comma Combinator (A,B ---> this selects all A and B elements. You can combine any selectors this way, and you can specify more than two.)</li>
+    <li>first-child pseudo selector (Selects a first child element inside of another element)(You can select the first child element. A child element is any element that is directly nested in another element. You can combine this pseudo-selector with other selectors.)<br>(Eg:(i) p:first-child selects all first child p elements.<br>(ii) div p:first-child selects all first child p elements that are in a div.)</li>
+    <li>only-child pseudo selector (Select an element that are the only element inside another one)<br>(Eg: (i) span:only-child selects the span elements that are the only child of some other element.<br>(ii) ul li:only-child selects the only li element that are in a ul.)(flukeout.github.io/#)</li>
+    <li>Pro Tip → In cases where there is only one element, that element counts as the first-child, only-child and last-child!</li>
+    <li>last-child pseudo selector (Selects the last element inside another element) <br>(Eg:-(i) span:last-child selects all last-child span elements.<br> (ii) ul li:last-child selects the last li elements inside of any ul.)</li>
+    <li>nth-child(index) pseudo selector (Selects the nth (Ex: 1st, 3rd, 12th etc. according to the given index starting from first/beginning) child element in another element.) <br>(Eg:(i) :nth-child(8) selects every element that is the 8th child of another element.<br>(ii) div p:nth-child(2n) selects all the p that are the second p in every div)(as we passed n with 2 so it works for whole page, agar sirf 2 pass karte tho wo bas ak hi bar kam karta.</li>
+    <li>nth-last-child(index) pseudo selector (Selects the nth (Ex: 1st, 3rd, 12th etc. according to the given index starting from end/backwards) child element in another element.) <br>(Eg:(i) :nth-last-child(2n)  selects all even child elements from the <strong>last point</strong>.</li>
+    <li>first-of-type selector selects the first element of the specific type.(Eg: span:first-of-type selects the first span in any element.)(matlab jis bhi tag/element par hum ye first-of-type selector use karte hai wo us element kae first first wale ko pick kar kae uspar kam karta hai)</li>
+    <li>nth-of-type selector selects a specific element based on its type and order in another element - or even or odd instances of that element.<br>(Eg:(i) div:nth-of-type(2) selects the second instance of a div.<br>(ii) .example:nth-of-type(odd) selects all odd instances of a the example class.)<br>(iii) plate:nth-of-type(3n) selects all the elements in basis of multiple of 3, i.e 3rd line then 6th line then 9th and so on</li>
+    <li>nth-of-type selector with formula -- The nth-of-type formula selects every nth element, starting the count at a specific instance of that element.(Eg:- span:nth-of-type(6n+2) selects every 6th instance of a span, starting from (and including) the second instance.)</li>
+    <li>only-of-type selector -- select elements that are the only ones of their type within of their parent element(Eg:- p span:only-of-type selects a span within any p if it is the only span in there.)</li>
+    <li>last-of-type selector selects each last element of that type within another element.<br>(Eg :-(i) div:last-of-type selects the last div in every element.<br>(ii) p span:last-of-type selects the last span in every p.</li>
+    <li>Negation Pseudo-class -->> :not(anything) You can use this to select all elements that do not match selector "X".<br>Examples:-(i) :not(#fancy) selects all elements that do not have id="fancy".<br>(ii) div:not(:first-child) selects every div that is not a first child.<br>(iii) :not(.big, .medium) selects all elements that do not have class="big" or class="medium".</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,33 @@
+li {
+    list-style: none;
+}
+
+.welcomeImage > img {
+    height: 800px;
+    width: 1325px;
+}
+
+.footer {
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer > p {
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-betweenxSSSZ;
+}

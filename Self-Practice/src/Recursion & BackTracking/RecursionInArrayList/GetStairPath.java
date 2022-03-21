@@ -17,11 +17,11 @@ public class GetStairPath {
             ArrayList<String> negativePath = new ArrayList<>();
             return negativePath;
         }
-        ArrayList<String> faithpath1 = getStairPath(n - 1);
-        ArrayList<String> faithpath2 = getStairPath(n - 2);
-        ArrayList<String> faithpath3 = getStairPath(n - 3);
+        ArrayList<String> faithpath1 = getStairPath(n - 1);            // faithpath1 for 1 step
+        ArrayList<String> faithpath2 = getStairPath(n - 2);            // faithpath2 for 2 step
+        ArrayList<String> faithpath3 = getStairPath(n - 3);            // faithpath3 for 3 step
         
-        ArrayList<String> totalPath = new ArrayList<>();
+        ArrayList<String> totalPath = new ArrayList<>();               // my answer array list where i'll add all possible paths, above apart from faith this line defines mywork to work for n
 
         for(String path1 : faithpath1) {
             totalPath.add(path1 + 1);

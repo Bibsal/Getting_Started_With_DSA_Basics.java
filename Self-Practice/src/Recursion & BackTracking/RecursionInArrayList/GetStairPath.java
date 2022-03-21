@@ -26,7 +26,11 @@ public class GetStairPath {
         for(String path1 : faithpath1) {
             totalPath.add(path1 + 1);
         }
-
+        /* Normal for loop sae karna hota tho :-
+        for(int i = 0; i < faithpath1.size(); i++) {
+            totalPath.add("1"+faithpath1.get(i));     // arraylist me get use karke kam pura karte hai
+        }
+        */
         for(String path2 : faithpath2) {
             totalPath.add(path2 + 2);
         }

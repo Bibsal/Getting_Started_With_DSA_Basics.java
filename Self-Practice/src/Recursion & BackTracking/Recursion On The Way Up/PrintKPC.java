@@ -9,7 +9,7 @@ public class PrintKPC {
 
     public static void printKPC(String str, String ans) {
         if(str.length() == 0) {
-            System.out.println(ans);
+            System.out.print(ans+" ");
             return;
         }
         String word = array[str.charAt(0) - '0'];

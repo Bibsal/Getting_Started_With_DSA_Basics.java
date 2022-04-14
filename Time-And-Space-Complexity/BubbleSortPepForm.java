@@ -7,7 +7,7 @@ public class BubbleSortPepForm {
     int n = arr.length;
     for(int itr = 1; itr <= n - 1; itr++) {
       for(int i = 0; i <= n - itr - 1; i++) {
-        if(isSmaller(arr,i+1,i) == true) {
+        if(isSmaller(arr,i+1,i) == true) {          // agar agae wala value chota hai piche wale sae tho swap kar dnge, qki bare value ko hame last par leke jana hai and likewise sort karna hai saro ko
           swap(arr,i+1,i);
         }
       }

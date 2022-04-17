@@ -20,3 +20,24 @@ a = 'this is also string, character data type nahi hota javascript me';
 a = null;
 
 console.log(a);                        // now since last updated/assigned value of a was null, so here null will be printed.
+
+// ----------------------------------------------------------------------------------------------
+let endNum = 20;
+// You are given an endNum
+// check from 1 to that endNum(20)
+// if num is multiple of 3 -> Print : Fizz 
+// if num is multiple of 5 -> Print : Fizz 
+// if num is multiple of both 3 & 5 -> Print : FizzBuzz
+// if non of these -> number itself
+
+for(let i = 1; i <= 20; i++) {
+    if(i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+    } else if(i % 3 == 0) {
+        console.log("Fizz");
+    } else if(i % 5 == 0){
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}

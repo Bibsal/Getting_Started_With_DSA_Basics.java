@@ -41,3 +41,27 @@ for(let i = 1; i <= 20; i++) {
         console.log(i);
     }
 }
+
+console.log("------------------------------------------------------------------------------------");
+// ----------------------------------------------------------------------------------------------
+let arr = ["Bishal", "Bibek"]
+console.log(arr);
+console.log("------------------------------------------------------------------------------------");
+arr.push("Keshri");              // push is used to add element to the last in the array
+console.log(arr);
+console.log("------------------------------------------------------------------------------------");
+arr.pop();                       // pop is used to remove element from the last in the array
+console.log(arr);
+
+
+
+
+
+console.log("------------------------------------------------------------------------------------");
+console.log(arr);
+console.log("------------------------------------------------------------------------------------");
+arr.unshift("Keshri");              // unshift is used to add element to the starting of the array
+console.log(arr);
+console.log("------------------------------------------------------------------------------------");
+arr.shift();                       // shift is used to remove element from the starting of the array
+console.log(arr);

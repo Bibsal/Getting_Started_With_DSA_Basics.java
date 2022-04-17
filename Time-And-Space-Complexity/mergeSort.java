@@ -20,7 +20,7 @@ public class mergeSort {
         }
         int mid = (low + high) / 2;
         int[] fsh = MergeSort(arr, low, mid);                          // first sorted half
-        int[] ssh = MergeSort(arr, mid + 1, high);                   // second sorted half
+        int[] ssh = MergeSort(arr, mid + 1, high);                     // second sorted half
         int[] mergeBothArr = mergeTwoSortedArrays(fsh, ssh);
 
         return mergeBothArr;

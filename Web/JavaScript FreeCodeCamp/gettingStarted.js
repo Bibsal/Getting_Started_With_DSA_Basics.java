@@ -87,6 +87,5 @@ for(let i = 0; i < arr1.length; i++) {
     if(isPresent == false) {
         arr2.push(elementToPut);
     }
-}
 console.log(arr2);
-console.log("---------------------------------------");
+console.log("------------------------------------------");

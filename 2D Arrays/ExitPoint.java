@@ -23,7 +23,7 @@ public class ExitPoint {
 				i++;
 			} else if(direction == 2) {   //For west direction is 2
 				j--;
-			} else if(direction == 3) {    //For north direction is 3
+			} else if(direction == 3) {    //For north direction is 3 
 				i--;
 			}
 			

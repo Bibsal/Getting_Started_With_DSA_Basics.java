@@ -81,3 +81,24 @@ DROP COLUMN ManagerFName;
 ALTER TABLE employee
 CHANGE COLUMN Job Designation VARCHAR(40) NOT NULL;            -- this will change the column name from job to designation
 
+-- To add, remove and modify the constraints we can easily do it using the ALTER command 
+
+-- SYNTAX  :-
+-- ALTER TABLE tablename
+-- CHANGE COLUMN columnName
+-- columnNameAgain DataType(agar datatype change karna hai tho yaha changed wala likh do) ConstraintToBeAdded(and if you wont to remove the constraint then just dont write this part and it'll automatically be removed)
+
+-- To add constraints you just have to write all the stuffs and also write the constraints that you want to add and your constraints will be added
+ALTER TABLE employee
+CHANGE COLUMN EmpCode
+EmpCode INT(4) UNIQUE NOT NULL;
+
+-- To Remove constraints you just have to not write the constraint and write the rest of the stuffs
+ALTER TABLE emoloyee
+CHANGE COLUMN Salary                  -- this will remove the NOT NULL constraint from Salary column/attribute
+Salary FLOAT;                        -- this will change the datatype of salary from int to float
+
+-- Removing the Not Null constraint from the deptcode column/attribute/field
+ALTER TABLE employee
+CHANGE COLUMN DeptCode
+DeptCode INT(3);                  -- this will remove the not null constraint  form the deptcode column....

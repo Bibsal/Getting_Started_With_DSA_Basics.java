@@ -34,7 +34,7 @@ CREATE TABLE employee (
 ALTER TABLE employee ADD COLUMN email VARCHAR(40) NOT NULL;
 
 
--- INSTERTING DATA IN THE TABLE WITH SPECIFIC COLUMN's
+-- INSERTING DATA IN THE TABLE WITH SPECIFIC COLUMN's
 
 --INSERT
     INSERT INTO EMPLOYEE  
@@ -55,3 +55,29 @@ VALUES (9369, 'TONY', 'STARK', 'SOFTWARE ENGINEER', 7902, '1980-12-17', 2800,0,2
        (9777, 'MADII', 'HIMBURY', 'ANALYST', 7839, '1981-05-01', 2000, 200, NULL,"abc@gmail.com"),
        (9860, 'ATHENA', 'WILSON', 'ANALYST', 7839, '1992-06-21', 7000, 100, 50,"abc@gmail.com"),
        (9861, 'JENNIFER', 'HUETTE', 'ANALYST', 7839, '1996-07-01', 5000, 100, 50,"abc@gmail.com");
+
+
+-- Now if we want to add columns manually i.e after certain columns tho ap wo bhi kar skte hai alter command sae using AFTER.
+
+ALTER TABLE employee
+ADD COLUMN dob DATE 
+AFTER EmpLName;                    -- so this command will add dob after EMPLName column.
+
+-- To add column to the top of the table you use FIRST
+ALTER TABLE employee
+ADD COLUMN ManagerFName VARCHAR(40)
+FIRST;
+
+-- To Remove any column we can do it using the drop using alter command
+ALTER TABLE employee
+DROP COLUMN ManagerFName;
+
+-- To Remove multiple columns
+ALTER TABLE employee
+DROP COLUMN dob
+DROP COLUMN ManagerFName;
+
+-- To Change Column Name
+ALTER TABLE employee
+CHANGE COLUMN Job Designation VARCHAR(40) NOT NULL;            -- this will change the column name from job to designation
+

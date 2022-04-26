@@ -1,4 +1,3 @@
-CREATE TABLE employee (
     -- CREATE TABLE  employee(
     -- unique and Not Null
 --     EmpCode INT(4) ,
@@ -14,6 +13,7 @@ CREATE TABLE employee (
 --    DEPTCODE     INT(3) NOT NULL
 -- --    email
 -- );
+CREATE TABLE employee (                    
     EmpCode Int(4) ,
     EmpFName VARCHAR(40) NOT NULL,
     EmpLName VARCHAR(40) ,
@@ -24,3 +24,6 @@ CREATE TABLE employee (
     Commission INT(10),
     DeptCode INT(3) NOT NULL
 );
+
+-- Till here our table will be created with the above mentioned columns/attributes
+---------------------------------------------------------------------------

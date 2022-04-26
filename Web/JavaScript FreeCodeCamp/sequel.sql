@@ -27,3 +27,8 @@ CREATE TABLE employee (
 
 -- Till here our table will be created with the above mentioned columns/attributes
 ---------------------------------------------------------------------------
+-- Now we will add one more column named email, but since we have already created our table so how can we add a new column in the same table
+-- So yes we can add a new column in the existing table using the ALTER command.
+-- ALTER command is used for adding removing modifying in a table , basically altering in a table.
+
+ALTER TABLE employee ADD COLUMN email VARCHAR(40) NOT NULL;

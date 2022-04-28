@@ -14,7 +14,9 @@ public class BalancedBrackets {
             if(ch == '(' || ch == '{' || ch == '[') {
                 st.push(ch);
             } else if(ch == ')' || ch == '}' || ch == ']') {
-                if(ch == ')' && st.peek() != '(') {
+                if(st.size() == 0) {
+                    return false;
+                } else if(ch == ')' && st.peek() != '(') {
                     return false;
                 } else if(ch == '}' && st.peek() != '{') {
                     return false;

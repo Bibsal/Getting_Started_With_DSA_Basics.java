@@ -6,6 +6,7 @@ body {
     background-color: red;
     width: 200px;
     height: 200px;
+    display: inline-block;                    /* this(inline-block) property for all three divs we used so that all the box could come in one single line and it also by default brings little space between the elements  -->> and now as we want blue first then yellow then red box so we will do that using the relative postion and it's coordinate properties*/
     position: relative;
     left: 400px;
 }
@@ -13,15 +14,16 @@ body {
     background-color: blue;
     width: 200px;
     height: 200px;
+    display: inline-block;                   /* this(inline-block) property for all three divs we used so that all the box could come in one single line and it also by default brings little space between the elements  -->> and now as we want blue first then yellow then red box so we will do that using the relative postion and it's coordinate properties*/
     position: relative;
-    bottom: 200px;
+    right: 200px;
 }
 .yellow {
     background-color: yellow;
     width: 200px;
     height: 200px;
     position: relative;
-    bottom: 400px;
-    left: 200px;
+    display: inline-block;                 /* this(inline-block) property for all three divs we used so that all the box could come in one single line and it also by default brings little space between the elements  -->> and now as we want blue first then yellow then red box so we will do that using the relative postion and it's coordinate properties*/
+    right: 200px;
 }
 /* RELATIVE POSITION STYLE END */

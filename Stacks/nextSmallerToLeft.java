@@ -1,4 +1,4 @@
-import.java.util.*;
+import java.util.*;
 public class nextSmallerToLeft {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

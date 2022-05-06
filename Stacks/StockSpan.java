@@ -21,7 +21,7 @@ public class StockSpan {
             while(st.size() != 0 && arr[st.peek()] < arr[i]) {
                 st.pop();
             }
-            span[i] = st.isEmpty() ? i + 1 : i - st.peek();
+            span[i] = st.isEmpty() ? i - (-1) : i - st.peek();
             st.push(i);
         }
         return span;

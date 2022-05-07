@@ -16,20 +16,20 @@ public class InfixEvaluation {
             } else if(ch == '(') {                       // step 3
                 st2.push(ch);
             } else if(ch == '+' || ch == '-' || ch == '*' || ch == '/') {               // step 4
-                while(st2.size() > 0 && precedence(st2.peek()) > precedence(ch)) {
+                while(st2.size() > 0 && precedence(st2.peek()) >= precedence(ch)) {
                     char operator = st2.pop();
                     int op2 = st1.pop();
-                    int op1 = st2.pop();
+                    int op1 = st1.pop();
 
                     int result = solve(op1, op2, operator);
                     st1.push(result);
                 }
-                st2.push(ch);
+                st2.push(ch);                       // this is to push the operator 
             } else if(ch == ')') {                   // step 5
                 while(st2.peek() != '(') {
                     char operator = st2.pop();
                     int op2 = st1.pop();
-                    int op1 = st2.pop();
+                    int op1 = st1.pop();
 
                     int result = solve(op1, op2, operator);
                     st1.push(result);
@@ -69,7 +69,7 @@ public class InfixEvaluation {
         } else if(ch == '*' || ch == '/') {
             return 2;
         } else {
-            return 0;
+            return 0;        // this is for the brackets, since we don't have any precedence for the brackets so we will just return 0
         }
     }
 }

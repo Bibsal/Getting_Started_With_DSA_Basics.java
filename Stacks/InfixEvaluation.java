@@ -9,7 +9,7 @@ public class InfixEvaluation {
 
         // step 2,3,4,5
         for(int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+            char ch = str.charAt(i);           // ak ak character ko traverse karnge and accordingly uska kam karnge
             // for operands
             if(ch >= '0' && ch <= '9') {                  // step 2
                 st1.push(ch - '0');          // to convert the charater into the number/integer we substract it with 0

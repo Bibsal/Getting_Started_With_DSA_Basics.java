@@ -14,7 +14,8 @@ public class InfixConversion {
             if(ch >= 'a' && ch <= 'z') {    // step 2
                 st1.push(ch+"");
                 st3.push(ch+"");
-            } else if(ch == '(') {          // step 3
+            } else if(ch == '(') {          // step 3 (Eg input a*(b-c+d)/e)
+                
                 st2.push(ch);
             } else if(ch == '+' || ch == '-' || ch == '*' || ch == '/') {           // step 4
                 while(st2.size() > 0 && precedence(st2.peek()) >= precedence(ch)) {

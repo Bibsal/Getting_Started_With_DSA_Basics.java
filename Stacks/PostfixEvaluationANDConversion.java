@@ -50,3 +50,11 @@ public class PostfixEvaluationANDConversion {
         }
     }
 }
+
+/*
+Eg Input -->> 264*8/+3-
+Output :-
+Evaluated answer -->> 2
+Infix Conversion -->> ((2+((6*4)/8))-3)
+Prefix Conversion -->> -+2/*6483
+*/

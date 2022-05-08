@@ -56,8 +56,8 @@ public class InfixConversionRetry {
             char operatorpost = st2.pop();
             st3.push(opost1 + opost2 + operatorpost);
         }
-        System.out.println("Postfix -->>" + st3.peek());
-        System.out.println("Prefix -->>" + st1.peek());
+        System.out.println("Postfix -->> " + st3.peek());
+        System.out.println("Prefix -->> " + st1.peek());
     }
 
     public static int precedence(char ch) {

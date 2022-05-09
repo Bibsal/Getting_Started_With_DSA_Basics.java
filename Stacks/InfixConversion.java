@@ -43,7 +43,7 @@ public class InfixConversion {
                     String op2pre = st3.pop();
                     String op1pre = st3.pop();
                     char operatorpre = st2.pop();
-                    st1.push(operatorpre + op1pre + op2pre);
+                    st3.push(operatorpre + op1pre + op2pre);
                 }
                 st2.pop();
             }

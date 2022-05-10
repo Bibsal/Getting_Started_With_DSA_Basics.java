@@ -20,19 +20,19 @@ public class PrefixEvaluationANDConversion {
             } else {   // operator mila tho answer banaynge // else me tho sirf operators hi ho sakta hai na because postfix expressions does not have brackets so we don't need to handle the cases of bracket and can directly write else which will handle the operators
                 // So yaha hum answer calculate karnge 
                 // Evaluation
-                int op2 = st1.pop();
                 int op1 = st1.pop();
+                int op2 = st1.pop();
                 int ans = solve(op1, op2, ch);    // the ch here is the character or the operator that we will be using to calculating/evaluating our answers
                 st1.push(ans);
 
                 // Infix
-                String op2in = st2.pop();
                 String op1in = st2.pop();
+                String op2in = st2.pop();
                 st2.push("("+ op1in + ch + op2in + ")");       // since our infix is in this format so we maintained the brackets and also the format i.e operand + operator + operand
 
                 // Postfix
-                String op2pre = st3.pop();
                 String op1pre = st3.pop();
+                String op2pre = st3.pop();
                 st3.push(op1pre + op2pre + ch);     // and in prefix operator + operand + operand and no brackets are present so we work accordingly
             }
         }

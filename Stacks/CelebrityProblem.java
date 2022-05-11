@@ -13,7 +13,7 @@ public class CelebrityProblem {
         celebrityCheck(arr);
     }
 
-    public static void celebrityCheck(String[][] arr) {
+    public static void celebrityCheck(int[][] arr) {
         Stack<Integer> st = new Stack<>();
         for(int i = 0; i < arr.length; i++) {    // phle sare index ko push karnge, then niche check karte hue accordingly pop karnge and last me hamare pas ak index bachega stack me so wo hamara potential answer considered hoga qki wo abi sari values k sath check nhi hua rhta hai so is potential answer ko bhi hum check karke bta dnge ki kya koi celebrity hai ki nhi
             st.push(i);
@@ -33,7 +33,7 @@ public class CelebrityProblem {
         int potAns = st.peek();     // so last me hamare stack me jo bhi bacha hai wo hamara potential answer hoga so ham ussae ab agae bakiyo sae check kar k final bta dnge ki ye potential wala bhi sach me celebrity hai ki nhi, agar nahi hai tho none print kar dnge warna usko as a confirm celebrity hi print kar dnge
         for(int i = 0; i < arr.length; i++) {
             if(i != potAns) {     // we will not check in the same index right qki idx 2, potAns 2 ko hi janna matlab khud ko hi janna hai, so ofcourse we will not check in self
-                if(arr[i][potAns] == 0 || arrr[potAns][i] == 1) {
+                if(arr[i][potAns] == 0 || arr[potAns][i] == 1) {
                     System.out.println("none");
                     return;
                 }

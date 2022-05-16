@@ -24,7 +24,7 @@ public class addLast {
                 tail = nayaNode;
             }
             // Update size
-            size++;
+            size++; 
         }
 
         void display() {

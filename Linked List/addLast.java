@@ -23,7 +23,7 @@ public class addLast {
                 tail.next = nayaNode;
                 tail = nayaNode;
             }
-            // Update size
+            // Update size 
             size++; 
         }
 

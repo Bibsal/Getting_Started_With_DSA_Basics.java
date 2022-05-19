@@ -51,7 +51,5 @@ public class addLast {
         list.display();
         list.addLast(50);
         list.display();
-
-        
     }
 }

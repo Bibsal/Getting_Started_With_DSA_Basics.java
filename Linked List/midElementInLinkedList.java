@@ -28,7 +28,7 @@ public class MidElem {
 		public int midElement() {
 			if(size == 0) {
 				System.out.println("List is Empty");
-				return;
+				return -1;
 			} else if(size == 1) {
 				return head.data;
 			} else {

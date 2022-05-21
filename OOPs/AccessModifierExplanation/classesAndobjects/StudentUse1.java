@@ -6,7 +6,7 @@ public class StudentUse1 {
         // Scanner scn = new Scanner(System.in);
         Student s1 = new Student();
         s1.name = "Bishal";
-        s1.setrollNumber(-123);            // see if we woudnt had set this rollNumber as private in the Student class then anyone could have easily come and set invalid index, but now after making the rollNumber private no one can access our rollNumber outside the student class
+        s1.setrollNumber(-123);          // see if we woudnt had set this rollNumber as private in the Student class then anyone could have easily come and set invalid index, but now after making the rollNumber private no one can access our rollNumber outside the student class
                                          // so how can we use this rollNumber outside the student class so we can do that via getters and setters in the same class of student and making these getters and setters public so that we can access these from anywhere, 
                                          // so now agar kahi sae v is getters and setters ko agar access kar sakte hai tho phir tho hum indirectly phir sae rollNumber ko hi access kar rhe hai qki hamne getters and setters tho private wale rollNumber ko hi bahar sae access karne k liye banaya tha na,
                                          // so phir waisi bat hai tho phir hum getters and setters ko use hi q kare, directly rollNumber ko hi public kar dete hai na, but kuch tho faida hoga getters and setters use karne ka, yes bhot bara faida hai, jab hum getters and setters use karte hai tho hum 

@@ -8,7 +8,7 @@ public class Student {
         if(rolNum <= 0) {
             return;
         }
-        rollNumber = rolNum;           // we authenticated and then agar valid hai tabhi set kiya
+        rollNumber = rolNum;           // we authenticated with if condition and then agar valid hai tabhi set kiya
     }
 
     public int getrollNumber() {

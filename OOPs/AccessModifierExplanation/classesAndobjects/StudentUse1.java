@@ -1,4 +1,4 @@
-package classesAndobjects;
+package AccessModifierExplanation.classesAndobjects;
 
 import java.util.*;
 public class StudentUse1 {
